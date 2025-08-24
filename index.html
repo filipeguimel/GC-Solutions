@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G|C Solutions</title>
+    <style>
+        :root {
+            --black: #111;
+            --white: #fff;
+            --gray: #f5f5f5;
+            --accent: #000;
+            --font: 'Segoe UI', Arial, sans-serif;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: var(--font);
+            background: var(--white);
+            color: var(--black);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: var(--white);
+            border-bottom: 1px solid #e0e0e0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+            height: 64px;
+        }
+        .logo {
+            font-weight: bold;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+        nav a {
+            text-decoration: none;
+            color: var(--black);
+            font-size: 1rem;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #888;
+        }
+        main {
+            flex: 1;
+            margin-top: 64px;
+        }
+        section {
+            padding: 4rem 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        #inicio {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 60vh;
+            text-align: center;
+        }
+        #inicio h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+        }
+        #inicio p {
+            font-size: 1.2rem;
+            color: #444;
+        }
+        #servicos ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 2rem;
+        }
+        #servicos li {
+            font-size: 1.1rem;
+            padding: 1rem 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        #servicos li:last-child {
+            border-bottom: none;
+        }
+        #sobre p {
+            font-size: 1.1rem;
+            color: #333;
+            line-height: 1.6;
+        }
+        #contato form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            margin-top: 2rem;
+        }
+        #contato input, #contato textarea {
+            padding: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            background: var(--white);
+            color: var(--black);
+        }
+        #contato textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+        #contato button {
+            background: var(--black);
+            color: var(--white);
+            border: none;
+            padding: 0.9rem;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        #contato button:hover {
+            background: #333;
+        }
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background: var(--white);
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+            padding: 1rem 0;
+            font-size: 1rem;
+            color: #888;
+        }
+        /* Responsivo */
+        @media (max-width: 700px) {
+            header, main, section {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+            nav ul {
+                gap: 1rem;
+            }
+            #inicio h1 {
+                font-size: 2rem;
+            }
+        }
+        @media (max-width: 500px) {
+            header {
+                flex-direction: column;
+                height: auto;
+                padding: 1rem 0.5rem;
+            }
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            main {
+                margin-top: 90px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="dev-warning" style="width:100%;background:#111;color:#fff;text-align:center;padding:0.5rem 0;font-size:1rem;letter-spacing:1px;z-index:2000;position:fixed;top:0;left:0;">Site em desenvolvimento &lt;/&gt;</div>
+    <header style="margin-top:2.2rem;">
+        <div class="logo">
+            <img src="GC_logo.png" alt="G|C Solutions Logo" style="height:60px">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio">
+            <img src="GC_logo.png" alt="G|C Solutions Logo" style=</div>
+            <h1>G|C Solutions</h1>
+            <p>Soluções inteligentes em desenvolvimento de software.</p>
+        </section>
+        <section id="servicos">
+            <h2>Serviços</h2>
+            <ul>
+                <li>Desenvolvimento Web</li>
+                <li>Aplicações Mobile</li>
+                <li>Consultoria em Tecnologia</li>
+            </ul>
+        </section>
+        <section id="sobre">
+            <h2>Sobre</h2>
+            <p>A G|C Solutions é uma empresa especializada em desenvolvimento de software, focada em entregar soluções inovadoras, eficientes e sob medida para cada cliente. Nossa equipe é apaixonada por tecnologia e comprometida com a excelência em cada projeto.</p>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <form id="form-contato" autocomplete="off">
+                <input type="text" name="nome" placeholder="Nome" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="mensagem" placeholder="Mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="contato-msg" style="margin-top:1rem;font-size:1rem;color:#222;"></div>
+        </section>
+    </main>
+    <footer>
+        G|C Solutions © 2025
+    </footer>
+    <script>
+        // Scroll suave para navegação
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href.startsWith('#')) {
+                    e.preventDefault();
+                    document.querySelector(href).scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+        // Simulação de envio de formulário
+        document.getElementById('form-contato').addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.getElementById('contato-msg').textContent = 'Mensagem enviada! Em breve entraremos em contato.';
+            this.reset();
+        });
+    </script>
+</body>
+</html>
