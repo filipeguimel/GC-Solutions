@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -70,7 +70,7 @@
             max-width: 800px;
             margin: 0 auto;
         }
-        #inicio {
+        #home {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -78,41 +78,41 @@
             min-height: 60vh;
             text-align: center;
         }
-        #inicio h1 {
+        #home h1 {
             font-size: 2.5rem;
             font-weight: bold;
             margin-bottom: 1rem;
             letter-spacing: 2px;
         }
-        #inicio p {
+        #home p {
             font-size: 1.2rem;
             color: #444;
         }
-        #servicos ul {
+        #services ul {
             list-style: none;
             padding: 0;
             margin-top: 2rem;
         }
-        #servicos li {
+        #services li {
             font-size: 1.1rem;
             padding: 1rem 0;
             border-bottom: 1px solid #e0e0e0;
         }
-        #servicos li:last-child {
+        #services li:last-child {
             border-bottom: none;
         }
-        #sobre p {
+        #about p {
             font-size: 1.1rem;
             color: #333;
             line-height: 1.6;
         }
-        #contato form {
+        #contact form {
             display: flex;
             flex-direction: column;
             gap: 1.2rem;
             margin-top: 2rem;
         }
-        #contato input, #contato textarea {
+        #contact input, #contact textarea {
             padding: 0.8rem;
             border: 1px solid #ccc;
             border-radius: 4px;
@@ -120,11 +120,11 @@
             background: var(--white);
             color: var(--black);
         }
-        #contato textarea {
+        #contact textarea {
             min-height: 100px;
             resize: vertical;
         }
-        #contato button {
+        #contact button {
             background: var(--black);
             color: var(--white);
             border: none;
@@ -135,7 +135,7 @@
             cursor: pointer;
             transition: background 0.2s;
         }
-        #contato button:hover {
+        #contact button:hover {
             background: #333;
         }
         footer {
@@ -150,7 +150,7 @@
             font-size: 1rem;
             color: #888;
         }
-        /* Responsivo */
+        /* Responsive */
         @media (max-width: 700px) {
             header, main, section {
                 padding-left: 1rem;
@@ -159,7 +159,7 @@
             nav ul {
                 gap: 1rem;
             }
-            #inicio h1 {
+            #home h1 {
                 font-size: 2rem;
             }
         }
@@ -180,54 +180,54 @@
     </style>
 </head>
 <body>
-    <div id="dev-warning" style="width:100%;background:#111;color:#fff;text-align:center;padding:0.5rem 0;font-size:1rem;letter-spacing:1px;z-index:2000;position:fixed;top:0;left:0;">Site em desenvolvimento &lt;/&gt;</div>
+    <div id="dev-warning" style="width:100%;background:#111;color:#fff;text-align:center;padding:0.5rem 0;font-size:1rem;letter-spacing:1px;z-index:2000;position:fixed;top:0;left:0;">Website under development &lt;/&gt;</div>
     <header style="margin-top:2.2rem;">
         <div class="logo">
             <img src="GC_logo.png" alt="G|C Solutions Logo" style="height:60px">
         </div>
         <nav>
             <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="inicio">
-            <img src="GC_logo.png" alt="G|C Solutions Logo" style=</div>
+        <section id="home">
+            <img src="GC_logo.png" alt="G|C Solutions Logo">
             <h1>G|C Solutions</h1>
-            <p>Soluções inteligentes em desenvolvimento de software.</p>
+            <p>Smart solutions in software development.</p>
         </section>
-        <section id="servicos">
-            <h2>Serviços</h2>
+        <section id="services">
+            <h2>Services</h2>
             <ul>
-                <li>Desenvolvimento Web</li>
-                <li>Aplicações Mobile</li>
-                <li>Consultoria em Tecnologia</li>
+                <li>Web Development</li>
+                <li>Mobile Applications</li>
+                <li>Technology Consulting</li>
             </ul>
         </section>
-        <section id="sobre">
-            <h2>Sobre</h2>
-            <p>A G|C Solutions é uma empresa especializada em desenvolvimento de software, focada em entregar soluções inovadoras, eficientes e sob medida para cada cliente. Nossa equipe é apaixonada por tecnologia e comprometida com a excelência em cada projeto.</p>
+        <section id="about">
+            <h2>About</h2>
+            <p>G|C Solutions is a company specialized in software development, focused on delivering innovative, efficient, and tailor-made solutions for each client. Our team is passionate about technology and committed to excellence in every project.</p>
         </section>
-        <section id="contato">
-            <h2>Contato</h2>
-            <form id="form-contato" autocomplete="off">
-                <input type="text" name="nome" placeholder="Nome" required>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form id="contact-form" autocomplete="off">
+                <input type="text" name="name" placeholder="Name" required>
                 <input type="email" name="email" placeholder="Email" required>
-                <textarea name="mensagem" placeholder="Mensagem" required></textarea>
-                <button type="submit">Enviar</button>
+                <textarea name="message" placeholder="Message" required></textarea>
+                <button type="submit">Send</button>
             </form>
-            <div id="contato-msg" style="margin-top:1rem;font-size:1rem;color:#222;"></div>
+            <div id="contact-msg" style="margin-top:1rem;font-size:1rem;color:#222;"></div>
         </section>
     </main>
     <footer>
         G|C Solutions © 2025
     </footer>
     <script>
-        // Scroll suave para navegação
+        // Smooth scroll for navigation
         document.querySelectorAll('nav a').forEach(link => {
             link.addEventListener('click', function(e) {
                 const href = this.getAttribute('href');
@@ -237,10 +237,10 @@
                 }
             });
         });
-        // Simulação de envio de formulário
-        document.getElementById('form-contato').addEventListener('submit', function(e) {
+        // Simulate form submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
             e.preventDefault();
-            document.getElementById('contato-msg').textContent = 'Mensagem enviada! Em breve entraremos em contato.';
+            document.getElementById('contact-msg').textContent = 'Message sent! We will contact you soon.';
             this.reset();
         });
     </script>
